@@ -45,19 +45,19 @@ hed_voting/
 Z poziomu tego katalogu:
 
 ```bash
-# Test poprawności pełnego protokołu (~30 s):
+# Test poprawności pełnego protokołu 
 PYTHONPATH=. python3 hed_voting/tests/test_protocol.py
 
-# Eksperyment 1: czas operacji bazowych (~30 s):
+# Eksperyment 1: czas operacji bazowych 
 PYTHONPATH=. python3 hed_voting/experiments/exp1_basic_ops.py
 
-# Eksperyment 2: porównanie HED-Voting vs HSE-Voting (~1 min):
+# Eksperyment 2: porównanie HED-Voting vs HSE-Voting 
 PYTHONPATH=. python3 hed_voting/experiments/exp2_compare.py
 
-# Eksperyment 3a: czas każdej fazy protokołu (~1 min):
+# Eksperyment 3a: czas każdej fazy protokołu 
 PYTHONPATH=. python3 hed_voting/experiments/exp3a_phase_timing.py
 
-# Eksperyment 3b: Setup_CC (~3-10 min, długi):
+# Eksperyment 3b: Setup_CC 
 PYTHONPATH=. python3 hed_voting/experiments/exp3b_setup_cc.py
 
 # Wykres słupkowy faz:
@@ -75,5 +75,3 @@ Wyniki (JSON-y i pliki PNG) trafiają do `hed_voting/experiments/results/`.
 - **Złożoność pojedynczych operacji**: Setup_HE ≈ 7 ms, Enc_HE ≈ 1,6 ms,
   Dec_CC ≈ 3,6 ms, Rsa_Ver ≈ 9,5 µs, Count_CC ≈ 2,3 µs, Setup_CC ≈ 50 s
   (jednorazowo).
-
-Pełny opis w pliku `raport_HED_voting.docx`.
