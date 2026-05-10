@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.pyo
+
+experiments/results/
+
+venv/
+.venv/
+env/
+
+.idea/
+
+Thumbs.db
+desktop.ini
